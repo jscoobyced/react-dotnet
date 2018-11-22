@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400");
+@import './_variables';
+@import './_nav';
+
+* {
+    margin: 0 0;
+}
+
+html,
+body,
+main {
+    height: 100%;
+}
+
+html {
+    font-family: $font-primary;
+    font-size: $font-size;
+    background: $background;
+    color: $primary;
+}
+
+header {
+    text-align: center;
+    padding-top: 5px;
+    width: 100%;
+    height: 60px;
+}
+
+header span {
+    padding: 5px 10px 5px 5px;
+}
+
+.content {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+article {
+    width: 80%;
+    min-height: 200px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+article h1 {
+    padding-bottom: 10px;
+}
+
+section {
+    text-align: justify;
+    max-width: 60%;
+}
+
+select {
+    background: white;
+    padding: 5px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 545px) {
+
+    main {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    section {
+        max-width: 100%;
+    }
+}
